@@ -1,0 +1,12 @@
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.deps.json
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.dll
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\ref\HospiEnCasa.App.Dominio.dll
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\bin\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.csproj.AssemblyReference.cache
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.AssemblyInfoInputs.cache
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.AssemblyInfo.cs
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.csproj.CoreCompileInputs.cache
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.dll
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\ref\HospiEnCasa.App.Dominio.dll
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Dominio\obj\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
