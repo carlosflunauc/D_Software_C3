@@ -20,8 +20,8 @@ namespace HospiEnCasa.App.Consola
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
-            AsignarSignoVital();
-            //AsignarPaciente();
+            //AsignarSignoVital();
+            AsignarPaciente();
         }
         private static void AddPaciente()
         {
@@ -74,7 +74,7 @@ namespace HospiEnCasa.App.Consola
 
         private static void AsignarMedico()
         {
-            var medico = _repoPaciente.AsignarMedico(3, 5);
+            var medico = _repoPaciente.AsignarMedico(3, 2);
             Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
         }
 
@@ -82,7 +82,7 @@ namespace HospiEnCasa.App.Consola
         {
             var signoVital = new SignoVital
             {
-                FechaHora = new DateTime(1990, 04, 12),
+                FechaHora = new DateTime(2021, 10, 01),
                 Valor = 36.3F,
                 Signo = TipoSigno.TemperaturaCorporal
             };
@@ -91,13 +91,13 @@ namespace HospiEnCasa.App.Consola
 
         private static void AsignarSignoVital()
         {
-            var signoVital = _repoPaciente.AsignarSignoVital(1, 4);
+            var signoVital = _repoPaciente.AsignarSignoVital(1, 1);
             Console.WriteLine(signoVital.Signo + " " + signoVital.Valor);
         }
 
         private static void AsignarPaciente()
         {
-            var paciente = _repoSignoVital.AsignarPaciente(2, 3);
+            var paciente = _repoSignoVital.AsignarPaciente(1, 1);
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
         }
 
