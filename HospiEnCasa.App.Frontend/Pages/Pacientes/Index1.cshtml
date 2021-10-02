@@ -10,6 +10,8 @@
             <th scope="col">Nombre</th>
             <th scope="col">Apellidos</th>
             <th scope="col">Telefono</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Fecha Nacimiento</th>
             <th colspan="2" scope="col">Acciones</th>
         </tr>
     </thead>
@@ -20,6 +22,8 @@
                 <td>@paciente.Nombre</td>
                 <td>@paciente.Apellidos</td>
                 <td>@paciente.NumeroTelefono</td>
+                <td>@paciente.Genero</td>
+                <td>@paciente.FechaNacimiento</td>
                 <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@paciente.Id">Detalle</a></td>
                 <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@paciente.Id">Editar</a></td>
             </tr>
