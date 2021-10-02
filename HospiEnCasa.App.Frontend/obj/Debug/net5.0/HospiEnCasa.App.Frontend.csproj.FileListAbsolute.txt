@@ -72,3 +72,4 @@ C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\ref\HospiEnCasa.App.Frontend.dll
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.pdb
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.genruntimeconfig.cache
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Index1.cshtml.g.cs

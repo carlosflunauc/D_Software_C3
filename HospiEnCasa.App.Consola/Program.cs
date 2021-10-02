@@ -13,29 +13,29 @@ namespace HospiEnCasa.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddPaciente();
+            AddPaciente();
             //BuscarPaciente(1);
             //EliminarPaciente(3);
             //MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
-            AsignarSignoVital();
+            //AsignarSignoVital();
             //AsignarPaciente();
         }
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Juanito",
+                Nombre = "Pedro",
                 Apellidos = "Perez",
-                NumeroTelefono = "3001645",
+                NumeroTelefono = "315657",
                 Genero = Genero.Masculino,
-                Direccion = "Calle 4 No 7-4",
+                Direccion = "Carrera 6 No 7-4",
                 Longitud = 5.07062F,
                 Latitud = -75.52290F,
-                Ciudad = "Manizales",
-                FechaNacimiento = new DateTime(1990, 04, 12)
+                Ciudad = "Pereira",
+                FechaNacimiento = new DateTime(2000, 04, 12)
             };
             _repoPaciente.AddPaciente(paciente);
         }

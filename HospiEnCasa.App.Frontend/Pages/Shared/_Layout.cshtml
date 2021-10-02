@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -25,10 +25,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pacientes/Index">Pacientes</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Pacientes/Index1">Pacientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Medicos/Index">Medicos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Medicos/Index1">Medicos</a>
                         </li>
                     </ul>
                 </div>
@@ -54,3 +54,8 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
+<!-- 
+    dotnet new page -n “Create”-na HospiEnCasa.App.Frontend.Pages -o .\Pages\Saludos\
+    -->
