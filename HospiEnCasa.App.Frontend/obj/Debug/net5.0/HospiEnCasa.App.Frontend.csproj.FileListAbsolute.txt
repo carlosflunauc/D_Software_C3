@@ -59,9 +59,6 @@ C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.RazorCoreGenerate.cache
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Create.cshtml.g.cs
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Details.cshtml.g.cs
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Index.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -75,5 +72,3 @@ C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\ref\HospiEnCasa.App.Frontend.dll
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.pdb
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\HospiEnCasa.App.Frontend.genruntimeconfig.cache
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Medicos\Index.cshtml.g.cs
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Edit.cshtml.g.cs
