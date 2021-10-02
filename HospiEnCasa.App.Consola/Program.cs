@@ -15,12 +15,12 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Hello World!");
             //AddPaciente();
             //BuscarPaciente(1);
-            EliminarPaciente(3);
+            //EliminarPaciente(3);
             //MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
-            //AsignarSignoVital();
+            AsignarSignoVital();
             //AsignarPaciente();
         }
         private static void AddPaciente()
@@ -82,16 +82,16 @@ namespace HospiEnCasa.App.Consola
         {
             var signoVital = new SignoVital
             {
-                FechaHora = new DateTime(2021, 10, 01),
-                Valor = 36.3F,
-                Signo = TipoSigno.TemperaturaCorporal
+                FechaHora = new DateTime(2021, 10, 02),
+                Valor = 89,
+                Signo = TipoSigno.SaturacionOxigeno
             };
             _repoSignoVital.AddSignoVital(signoVital);
         }
 
         private static void AsignarSignoVital()
         {
-            var signoVital = _repoPaciente.AsignarSignoVital(1, 1);
+            var signoVital = _repoPaciente.AsignarSignoVital(1, 2);
             Console.WriteLine(signoVital.Signo + " " + signoVital.Valor);
         }
 
