@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using HospiEnCasa.App.Dominio;
 using HospiEnCasa.App.Persistencia;
 
@@ -8,25 +9,28 @@ namespace HospiEnCasa.App.Consola
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         private static IRepositorioMedico _repoMedico = new RepositorioMedico();
+        private static IRepositorioSignoVital _repoSignoVital = new RepositorioSignoVital();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             //AddPaciente();
-            //IndexPacientes();
-            //DeletePaciente();
-            //IndexPacientes();
+            //BuscarPaciente(1);
+            //EliminarPaciente(2);
+            //MostrarPacientes();
             //AddMedico();
-            AsignarMedico();
-
+            //AsignarMedico();
+            //AddSignoVital();
+            AsignarSignoVital();
+            //AsignarPaciente();
         }
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Juanita",
-                Apellidos = "Gomez",
+                Nombre = "Juanito",
+                Apellidos = "Perez",
                 NumeroTelefono = "3001645",
-                Genero = Genero.Femenino,
+                Genero = Genero.Masculino,
                 Direccion = "Calle 4 No 7-4",
                 Longitud = 5.07062F,
                 Latitud = -75.52290F,
@@ -35,38 +39,69 @@ namespace HospiEnCasa.App.Consola
             };
             _repoPaciente.AddPaciente(paciente);
         }
-        private static void IndexPacientes()
+        private static void BuscarPaciente(int idPaciente)
         {
-            foreach (var paciente in _repoPaciente.GetAllPacientes())
+            var paciente = _repoPaciente.GetPaciente(idPaciente);
+            Console.WriteLine(paciente.Medico.Nombre);
+        }
+        private static void EliminarPaciente(int idPaciente)
+        {
+            _repoPaciente.DeletePaciente(idPaciente);
+            Console.WriteLine("paciente Eliminado");
+        }
+        private static void MostrarPacientes()
+        {
+            IEnumerable<Paciente> pacientes = _repoPaciente.GetAllPacientes();
+            foreach (var paciente in pacientes)
             {
                 Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
             }
         }
-        private static void DeletePaciente()
-        {
-            _repoPaciente.DeletePaciente(2);
-        }
-
         private static void AddMedico()
         {
             var medico = new Medico
             {
-                Nombre = "Juanita",
-                Apellidos = "Gomez",
+                Nombre = "Juliana",
+                Apellidos = "Lopez",
                 NumeroTelefono = "3001645",
                 Genero = Genero.Femenino,
                 Especialidad = "Internista",
-                Codigo = "123456",
-                RegistroRethus = "ABC123",
+                Codigo = "2535",
+                RegistroRethus = "34567"
             };
             _repoMedico.AddMedico(medico);
         }
 
         private static void AsignarMedico()
         {
-            var medico = _repoPaciente.AsignarMedico(1, 3);
+            var medico = _repoPaciente.AsignarMedico(3, 5);
             Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
         }
 
+        private static void AddSignoVital()
+        {
+            var signoVital = new SignoVital
+            {
+                FechaHora = new DateTime(1990, 04, 12),
+                Valor = 36.3F,
+                Signo = TipoSigno.TemperaturaCorporal
+            };
+            _repoSignoVital.AddSignoVital(signoVital);
+        }
+
+        private static void AsignarSignoVital()
+        {
+            var signoVital = _repoPaciente.AsignarSignoVital(1, 4);
+            Console.WriteLine(signoVital.Signo + " " + signoVital.Valor);
+        }
+
+        private static void AsignarPaciente()
+        {
+            var paciente = _repoSignoVital.AsignarPaciente(2, 3);
+            Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
+        }
+
+
     }
+
 }

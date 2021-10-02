@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using HospiEnCasa.App.Dominio;
 using HospiEnCasa.App.Persistencia;
-
-namespace HospiEnCasa.App.Fontend.Pages.Pacientes
+namespace HospiEnCasa.App.Frontend.Pages.Pacientes
 {
     public class CreateModel : PageModel
     {
@@ -17,7 +16,6 @@ namespace HospiEnCasa.App.Fontend.Pages.Pacientes
         {
             _repoPaciente = repoPaciente;
         }
-
         public void OnGet()
         {
             paciente = new Paciente();
@@ -25,8 +23,15 @@ namespace HospiEnCasa.App.Fontend.Pages.Pacientes
 
         public IActionResult OnPost(Paciente paciente)
         {
-            _repoPaciente.AddPaciente(paciente);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoPaciente.AddPaciente(paciente);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
