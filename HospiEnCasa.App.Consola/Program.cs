@@ -15,27 +15,27 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Hello World!");
             //AddPaciente();
             //BuscarPaciente(1);
-            //EliminarPaciente(2);
-            MostrarPacientes();
+            //EliminarPaciente(4);
+            //MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
             //AsignarSignoVital();
-            //AsignarPaciente();
+            AsignarPaciente();
         }
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Juanito",
+                Nombre = "Pablo",
                 Apellidos = "Perez",
                 NumeroTelefono = "3001645",
-                Genero = Genero.Masculino,
+                Genero = Genero.Pansexual,
                 Direccion = "Calle 4 No 7-4",
                 Longitud = 5.07062F,
                 Latitud = -75.52290F,
-                Ciudad = "Manizales",
-                FechaNacimiento = new DateTime(1990, 04, 12)
+                Ciudad = "Cajica",
+                FechaNacimiento = new DateTime(2000, 07, 18)
             };
             _repoPaciente.AddPaciente(paciente);
         }
@@ -61,20 +61,20 @@ namespace HospiEnCasa.App.Consola
         {
             var medico = new Medico
             {
-                Nombre = "Juliana",
+                Nombre = "Oscar",
                 Apellidos = "Lopez",
                 NumeroTelefono = "3001645",
-                Genero = Genero.Femenino,
-                Especialidad = "Internista",
-                Codigo = "2535",
-                RegistroRethus = "34567"
+                Genero = Genero.Masculino,
+                Especialidad = "Ortopedista",
+                Codigo = "25354",
+                RegistroRethus = "345627"
             };
             _repoMedico.AddMedico(medico);
         }
 
         private static void AsignarMedico()
         {
-            var medico = _repoPaciente.AsignarMedico(3, 2);
+            var medico = _repoPaciente.AsignarMedico(9, 10);
             Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
         }
 
@@ -82,22 +82,22 @@ namespace HospiEnCasa.App.Consola
         {
             var signoVital = new SignoVital
             {
-                FechaHora = new DateTime(2021, 10, 01),
-                Valor = 36.3F,
-                Signo = TipoSigno.TemperaturaCorporal
+                FechaHora = new DateTime(2021, 10, 02),
+                Valor = 93,
+                Signo = TipoSigno.SaturacionOxigeno
             };
             _repoSignoVital.AddSignoVital(signoVital);
         }
 
         private static void AsignarSignoVital()
         {
-            var signoVital = _repoPaciente.AsignarSignoVital(1, 1);
+            var signoVital = _repoPaciente.AsignarSignoVital(9, 3);
             Console.WriteLine(signoVital.Signo + " " + signoVital.Valor);
         }
 
         private static void AsignarPaciente()
         {
-            var paciente = _repoSignoVital.AsignarPaciente(1, 1);
+            var paciente = _repoSignoVital.AsignarPaciente(3, 9);
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
         }
 
