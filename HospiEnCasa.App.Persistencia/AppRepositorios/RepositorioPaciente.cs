@@ -18,7 +18,7 @@ namespace HospiEnCasa.App.Persistencia
 
         void IRepositorioPaciente.DeletePaciente(int idPaciente)
         {
-            var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+            Paciente pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
             if (pacienteEncontrado == null)
                 return;
             _appContext.Pacientes.Remove(pacienteEncontrado);
