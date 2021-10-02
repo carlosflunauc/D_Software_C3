@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {}
+    "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+    "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
+        "projectUniqueName": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
         "projectName": "HospiEnCasa.App.Dominio",
-        "projectPath": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\obj\\",
+        "projectPath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
+        "packagesPath": "/Users/carloslondono/.nuget/packages/",
+        "outputPath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/carloslondono/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,42 +52,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
+    "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
+        "projectUniqueName": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
         "projectName": "HospiEnCasa.App.Persistencia",
-        "projectPath": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\obj\\",
+        "projectPath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
+        "packagesPath": "/Users/carloslondono/.nuget/packages/",
+        "outputPath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Persistencia/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/carloslondono/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "C:\\misiontic_c3\\Proyecto_luna\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
+              "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
               }
             }
           }
@@ -146,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
