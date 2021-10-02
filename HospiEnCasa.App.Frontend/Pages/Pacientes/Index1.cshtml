@@ -3,13 +3,14 @@
 @{
 }
 <h1>Listado de Pacientes</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Paciente</a>
 <table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">Nombre</th>
             <th scope="col">Apellidos</th>
             <th scope="col">Telefono</th>
-            <th scope="col">Acciones</th>
+            <th colspan="2" scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +21,7 @@
                 <td>@paciente.Apellidos</td>
                 <td>@paciente.NumeroTelefono</td>
                 <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@paciente.Id">Detalle</a></td>
-                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@paciente.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@paciente.Id">Editar</a></td>
             </tr>
         }    
     </tbody>
