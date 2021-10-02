@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using HospiEnCasa.App.Dominio;
 using HospiEnCasa.App.Persistencia;
