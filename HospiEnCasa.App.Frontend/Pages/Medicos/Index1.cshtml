@@ -1,0 +1,15 @@
+@page
+@model HospiEnCasa.App.Frontend.Pages.Medicos.Index1Model
+@{
+}
+<h1>Listado de Medicos</h1>
+<table class="table table-striped">
+    @foreach (var medico in Model.medicos)
+    {
+        <tr>
+            <td>@medico.Nombre</td>
+            <td>@medico.Apellidos</td>
+            <td>@medico.Especialidad</td>
+        </tr>
+    }
+</table>
