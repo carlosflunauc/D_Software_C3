@@ -16,7 +16,7 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes
         public Paciente paciente {get; set;}
         public IEnumerable<Medico> medicos {get; set;}
 
-        public AddMedicoModel(IRepositorioPaciente repositorioPaciente, IRepositorioMedico repoMedico)
+        public AddMedicoModel(IRepositorioPaciente repoPaciente, IRepositorioMedico repoMedico)
         {
             _repoPaciente= repoPaciente;
             _repoMedico=repoMedico;
