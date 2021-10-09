@@ -4,21 +4,19 @@
 }
 
 <h1>Listado de Medicos</h1>
-<<<<<<< Updated upstream
-<table class="table">
-=======
 <table class="table table-striped">
    <tr>
             <th scope="col">Nombres</th>
             <th scope="col">Apellidos</th>
             <th scope="col">Especialidad</th>
         </tr>
->>>>>>> Stashed changes
+
     @foreach (var medico in Model.medicos)
     {
         
         <tr>
             <td>@medico.Nombre</td>
+            <td>@medico.Apellidos</td>
             <td>@medico.Especialidad</td>
         </tr>
     }

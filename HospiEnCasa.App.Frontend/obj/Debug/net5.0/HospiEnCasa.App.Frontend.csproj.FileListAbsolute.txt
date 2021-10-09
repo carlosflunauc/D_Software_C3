@@ -77,3 +77,4 @@ C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Create1.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Edit1.cshtml.g.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Medicos\Index1.cshtml.g.cs
+C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\AddMedico.cshtml.g.cs
