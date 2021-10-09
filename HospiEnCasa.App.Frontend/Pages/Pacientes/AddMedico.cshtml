@@ -6,7 +6,8 @@
 <form method="post">
     <div class="form-group">
         <label for="idPaciente">Paciente</label>
-        <input type="text" id="idPaciente" name="idPaciente" class="form-control" value="@Model.paciente.Id" readonly>
+        <input type="hidden" id="idPaciente" name="idPaciente" class="form-control" value="@Model.paciente.Id" readonly>
+        <input type="text" class="form-control" value="@Model.paciente.Nombre" readonly>
     </div>
     <div class="form-group">
         <label for="idMedico">Medico</label>
