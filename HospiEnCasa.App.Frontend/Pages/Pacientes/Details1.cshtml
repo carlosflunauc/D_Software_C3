@@ -20,5 +20,17 @@
         <th scope="col">Genero</th>
         <td>@Model.paciente.Genero</td>
     </tr>
+    <tr>
+        <th scope="col">Medico</th>
+        @if (Model.paciente.Medico == null)
+        {
+            <th>
+                <a class="btn btn-secondary" asp-page="./AddMedico" asp-route-id="@Model.paciente.Id">Asignar Medico</a>
+            </th>
+        } else 
+        {
+            <td>@Model.paciente.Medico.Nombre</td>
+        }
+    </tr>
 </table>
 <a class="btn btn-secondary" asp-page="./Index1">Volver</a>
