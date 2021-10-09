@@ -4,13 +4,30 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using HospiEnCasa.App.Dominio;
+using HospiEnCasa.App.Persistencia;
 
-namespace HospiEnCasa.App.Frontend.Pages
+namespace HospiEnCasa.App.Frontend.Pages.Pacientes
 {
     public class AddSignoVitalModel : PageModel
     {
-        public void OnGet()
+        private readonly IRepositorioPaciente _repoPaciente;
+        public Paciente paciente{get; set;}
+        public SignoVital signoVital {get; set;}
+        public AddSignoVitalModel(IRepositorioPaciente repoPaciente)
         {
+            _repoPaciente=repoPaciente;
+        }
+
+        public void OnGet(int id)
+        {
+            paciente=_repoPaciente.GetPaciente(id);
+            signoVital=new SignoVital();
+        }
+        public IActionResult OnPost(int idPaciente, SignoVital signoVital)
+        {
+            _repoPaciente.AsignarSignoVital(idPaciente, signoVital);
+            return RedirectToPage("Details1",new{id=idPaciente});
         }
     }
 }
