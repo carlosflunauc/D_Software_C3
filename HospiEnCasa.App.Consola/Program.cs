@@ -14,16 +14,9 @@ namespace HospiEnCasa.App.Consola
         {
             Console.WriteLine("Hello World!");
             //AddPaciente();
-<<<<<<< Updated upstream
             //BuscarPaciente(1);
-            EliminarPaciente(5);
              EliminarPaciente(6);
             //MostrarPacientes();
-=======
-            //BuscarPaciente(8);
-            //EliminarPaciente(7);
-            MostrarPacientes();
->>>>>>> Stashed changes
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
