@@ -2,8 +2,15 @@
 @model HospiEnCasa.App.Frontend.Pages.Medicos.Index1Model
 @{
 }
+<a class="btn btn-primary" asp-page="./Create1">Crear Medico</a>
+
 <h1>Listado de Medicos</h1>
 <table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Especialidad</th>
+    </tr>
     @foreach (var medico in Model.medicos)
     {
         <tr>
