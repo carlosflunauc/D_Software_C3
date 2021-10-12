@@ -19,9 +19,9 @@ namespace HospiEnCasa.App.Consola
             //MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
-            //AddSignoVital();
+            AddSignoVital();
             //AsignarSignoVital();
-            AsignarPaciente();
+            //AsignarPaciente();
         }
         private static void AddPaciente()
         {

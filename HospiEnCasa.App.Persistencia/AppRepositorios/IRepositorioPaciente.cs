@@ -10,6 +10,6 @@ namespace HospiEnCasa.App.Persistencia
         void DeletePaciente(int idPaciente);    
         Paciente GetPaciente(int idPaciente);
         Medico AsignarMedico(int idPaciente, int idMedico);
-        SignoVital AsignarSignoVital(int idPaciente, int idSignoVital);
+        SignoVital AsignarSignoVital(int idPaciente, SignoVital signoVital);
    }
 }

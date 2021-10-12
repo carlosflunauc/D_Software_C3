@@ -62,10 +62,10 @@ namespace HospiEnCasa.App.Persistencia
         }
         Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
         {
-            var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
             if (pacienteEncontrado != null)
             {
-                var medicoEncontrado = _appContext.Medicos.Find(idMedico);
+                var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
                 if (medicoEncontrado != null)
                 {
                     pacienteEncontrado.Medico = medicoEncontrado;
@@ -75,21 +75,18 @@ namespace HospiEnCasa.App.Persistencia
             }
             return null;
         }
-        SignoVital IRepositorioPaciente.AsignarSignoVital(int idPaciente, int idSignoVital)
+        SignoVital IRepositorioPaciente.AsignarSignoVital(int idPaciente, SignoVital signoVital)
         {
-            var pacienteEncontrado = _appContext.Pacientes
-            .Where(p => p.Id == idPaciente)
+            var paciente = _appContext.Pacientes
+            .Where(p => p.Id == idPaciente) 
             .Include(p => p.SignosVitales)
-            .SingleOrDefault();
-            if (pacienteEncontrado != null)
+            .FirstOrDefault();
+
+            if (paciente != null)
             {
-                var signoVitalEncontrado = _appContext.SignosVitales.Find(idSignoVital);
-                if (signoVitalEncontrado != null)
-                {
-                    pacienteEncontrado.SignosVitales.Add(signoVitalEncontrado);
-                    _appContext.SaveChanges();
-                }
-                return signoVitalEncontrado;
+                paciente.SignosVitales.Add(signoVital);
+                _appContext.SaveChanges();
+                return signoVital;
             }
             return null;
         }
