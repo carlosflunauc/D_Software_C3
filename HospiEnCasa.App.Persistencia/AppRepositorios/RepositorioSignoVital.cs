@@ -3,6 +3,7 @@ using HospiEnCasa.App.Dominio;
 
 namespace HospiEnCasa.App.Persistencia
 {
+    /*
     public class RepositorioSignoVital : IRepositorioSignoVital
     {
         private readonly AppContext _appContext = new AppContext();
@@ -43,4 +44,5 @@ namespace HospiEnCasa.App.Persistencia
         }
 
     }
+    */
 }
