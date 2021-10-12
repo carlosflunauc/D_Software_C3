@@ -10,6 +10,5 @@ namespace HospiEnCasa.App.Persistencia
         Medico GetMedico(int idMedico);
         //Medico UpdateMedico(Medico medico);
         //void DeleteMedico(int idMedico);    
-        
    }
 }
