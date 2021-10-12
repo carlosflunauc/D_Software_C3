@@ -18,6 +18,9 @@ HospiEnCasa.App.Dominio/bin
 HospiEnCasa.App.Dominio/obj
 HospiEnCasa.App.Consola/bin
 HospiEnCasa.App.Consola/obj
+*.dll
+*.pdb
+*.cache
 *.rsuser
 *.suo
 *.user
