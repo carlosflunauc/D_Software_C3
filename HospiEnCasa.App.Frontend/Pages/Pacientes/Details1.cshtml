@@ -24,9 +24,9 @@
         <th scope="col">Medico</th>
         @if (Model.paciente.Medico == null)
         {
-            <th>
+            <td>
                 <a class="btn btn-secondary" asp-page="./AddMedico" asp-route-id="@Model.paciente.Id">Asignar Medico</a>
-            </th>
+            </td>
         } else 
         {
             <td>@Model.paciente.Medico.Nombre</td>
