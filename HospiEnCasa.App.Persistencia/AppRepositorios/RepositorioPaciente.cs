@@ -90,5 +90,16 @@ namespace HospiEnCasa.App.Persistencia
             }
             return null;
         }
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesGenero(Genero genero)
+        {
+            return _appContext.Pacientes
+                        .where(p =>p.Genero == (genero))
+                        .ToList();
+        }
+        IEnumerable<Paciente> IRepositorioPaciente.SeachPacientes(string nombre)
+        {
+            return _appContext.Pacientes
+                            .where(p =>p.Nombre.Contains(nombre));
+        }
     }
 }
