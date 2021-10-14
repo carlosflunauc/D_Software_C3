@@ -11,7 +11,6 @@ C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\D
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.AssemblyInfoInputs.cache
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.AssemblyInfo.cs
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.csproj.CoreCompileInputs.cache
-C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.csproj.CopyComplete
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.dll
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\ref\HospiEnCasa.App.Persistencia.dll
 C:\misiontic_c3\Proyecto_luna\HospiEnCasa.App\HospiEnCasa.App.Persistencia\obj\Debug\net5.0\HospiEnCasa.App.Persistencia.pdb
