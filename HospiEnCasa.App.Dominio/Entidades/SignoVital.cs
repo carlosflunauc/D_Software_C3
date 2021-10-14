@@ -10,8 +10,8 @@ namespace HospiEnCasa.App.Dominio
     {
         public int Id { get; set; }
         public DateTime FechaHora  { get; set; }
-        [Required(ErrorMessage="Este es un campo obligatorio")]
-        [StringLength(50, ErrorMessage="Longitud Maxima 50")]
+        //[Required(ErrorMessage="Este es un campo obligatorio")]
+        //[StringLength(50, ErrorMessage="Longitud Maxima 50")]
         public float Valor {get;set;}
         public TipoSigno Signo { get; set; }
         public Paciente Paciente {get; set;}

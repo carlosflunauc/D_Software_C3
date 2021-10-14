@@ -26,7 +26,7 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes
         public IActionResult OnPost(int idPaciente, SignoVital signoVital)
         {
             _repoPaciente.AsignarSignoVital(idPaciente, signoVital);
-            return RedirectToPage("Details1", new {id= idPaciente});
+            return RedirectToPage("Details1", new {id = idPaciente});
         }
     }
 }
