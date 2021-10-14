@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace HospiEnCasa.App.Dominio
 {
     public class Persona
