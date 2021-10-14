@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using HospiEnCasa.App.Dominio;
 using HospiEnCasa.App.Persistencia;
+using HospiEnCasa.App.Dominio;
 
 namespace HospiEnCasa.App.Frontend.Pages.Pacientes
 {
@@ -21,16 +21,15 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes
         }
         public void OnGet(int? g, string b)
         {
-           if (String.IsNullOrEmpty(b))
-           {
-                bActual = "";
-                pacientes=_repoPaciente.GetAllPacientes(); 
-           }
-            else
+            if (String.IsNullOrEmpty(b))
             {
-                bActual =b;
-                pacientes=_repoPaciente.SeachPacientes(b);
+                bActual = "";
+                pacientes = _repoPaciente.GetAllPacientes();
             }
+            else{
+               bActual = b;
+               pacientes = _repoPaciente.SeachPacientes(b);
+             }         
         }
     }
 }
