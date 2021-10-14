@@ -28,10 +28,10 @@
         <th scope="col">Medico</th>
         @if (Model.paciente.Medico==null)
         {
-            <th>
+            <td>
                 <a class="btn btn-secondary" asp-page="./AddMedico" asp-route-id="@Model.paciente.Id">
                 Asignar Medico</a>
-            </th>
+            </td>
         } else 
         {
             <td>@Model.paciente.Medico.Nombre</td>
@@ -40,12 +40,12 @@
         <th scope="col">Signos Vitales</th>
         <td>
             <ul>
-                @foreach (var signo in Model.paciente.SignosVitales)
+                @foreach (var signoVital in Model.paciente.SignosVitales)
                 {
-                    <li>@signo.Signo - @signo.Valor</li>
+                    <li>@signoVital.Signo - @signoVital.Valor</li>
                 }
             </ul>
-            <a class="btn btn-secondary" asp-page="./AddSignoVilta" asp-route-id="@Model.paciente.Id">
+            <a class="btn btn-secondary" asp-page="./AddSignoVital" asp-route-id="@Model.paciente.Id">
                 Asignar Signo Vital</a>
         </td>
     </tr>

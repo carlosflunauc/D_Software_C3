@@ -6,11 +6,12 @@ using HospiEnCasa.App.Dominio;
 namespace HospiEnCasa.App.Persistencia
 {
     public class RepositorioEnfermera :IRepositorioEnfermera
-    {
+    {/*
         private readonly AppContext _appContext = new AppContext();
         IEnumerable<Enfermera> IRepositorioEnfermera.GetAllEnfermeras()
         {
             return _appContext.Enfermeras;
         }
+        */
     }
 }

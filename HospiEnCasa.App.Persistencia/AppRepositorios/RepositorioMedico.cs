@@ -6,19 +6,14 @@ namespace HospiEnCasa.App.Persistencia
     public class RepositorioMedico : IRepositorioMedico
     {
         private readonly AppContext _appContext = new AppContext();
-/*
-        public RepositorioMedico(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-*/
-        Medico IRepositorioMedico.AddMedico(Medico medico)
+
+        public Medico AddMedico(Medico medico)
         {
             var medicoAdicionado = _appContext.Medicos.Add(medico);
             _appContext.SaveChanges();
             return medicoAdicionado.Entity;
         }
-
+/*
         void IRepositorioMedico.DeleteMedico(int idMedico)
         {
             var medicoEncontrado = _appContext.Medicos.Find(idMedico);
@@ -27,17 +22,17 @@ namespace HospiEnCasa.App.Persistencia
             _appContext.Medicos.Remove(medicoEncontrado);
             _appContext.SaveChanges();
         }
-
-        IEnumerable<Medico> IRepositorioMedico.GetAllMedicos()
+*/
+        public IEnumerable<Medico> GetAllMedicos()
         {
             return _appContext.Medicos;
         }
 
-        Medico IRepositorioMedico.GetMedico(int idMedico)
+        public Medico GetMedico(int idMedico)
         {
             return _appContext.Medicos.Find(idMedico);
         }
-
+/*
         Medico IRepositorioMedico.UpdateMedico(Medico medico)
         {
             var medicoEncontrado = _appContext.Medicos.Find(medico.Id);
@@ -54,5 +49,6 @@ namespace HospiEnCasa.App.Persistencia
             }
             return medicoEncontrado;
         }
+        */
     }
 }

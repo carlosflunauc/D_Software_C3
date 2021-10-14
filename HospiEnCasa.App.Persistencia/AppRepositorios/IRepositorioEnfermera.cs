@@ -5,6 +5,6 @@ namespace HospiEnCasa.App.Persistencia
 {
     public interface IRepositorioEnfermera
     {
-     IEnumerable<Enfermera> GetAllEnfermeras();    
+     //IEnumerable<Enfermera> GetAllEnfermeras();    
     }
 }
