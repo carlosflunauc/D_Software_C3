@@ -9,18 +9,17 @@ namespace HospiEnCasa.App.Consola
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         private static IRepositorioMedico _repoMedico = new RepositorioMedico();
-        private static IRepositorioSignoVital _repoSignoVital = new RepositorioSignoVital();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             //AddPaciente();
             //BuscarPaciente(8);
             //EliminarPaciente(7);
-            //MostrarPacientes();
+            MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
-            AsignarSignoVital();
+            //AsignarSignoVital();
             //AsignarPaciente();
         }
         private static void AddPaciente()
@@ -77,7 +76,7 @@ namespace HospiEnCasa.App.Consola
             var medico = _repoPaciente.AsignarMedico(12, 10);
             Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
         }
-
+/*
         private static void AddSignoVital()
         {
             var signoVital = new SignoVital
@@ -101,7 +100,7 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
         }
 
-
+*/
     }
 
 }

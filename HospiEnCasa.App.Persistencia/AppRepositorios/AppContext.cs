@@ -17,7 +17,7 @@ namespace HospiEnCasa.App.Persistencia
     {
       if (!optionsBuilder.IsConfigured)
       {
-          optionsBuilder.UseSqlServer("Server=tcp:hospiencasaapp.database.windows.net,1433; Initial Catalog=Hospicarlosluna; Integrated Security=true;");
+          optionsBuilder.UseSqlServer("Server=tcp:hospiencasaapp.database.windows.net,1433;Database=Hospicarlosluna;User ID=Hospiencasa;Password=MisionTic2022;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
           //optionsBuilder.UseSqlServer("Initial Catalog=Hospicarlosluna; Data Source=HOMELUNA; Integrated Security=true");
             }
