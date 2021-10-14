@@ -13,26 +13,24 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes
     {
         private readonly IRepositorioPaciente _repoPaciente;
         public IEnumerable<Paciente> pacientes {get; set;}
-        public int generoActual {get; set;}
+        public int gActual {get; set;}
         public string bActual {get; set;}
-
         public Index1Model(IRepositorioPaciente repoPaciente)
         {
-            _repoPaciente=repoPaciente;
+            _repoPaciente = repoPaciente;
         }
-
-        public void OnGet(int genero, string b)
+        public void OnGet(int? g, string b)
         {
            if (String.IsNullOrEmpty(b))
            {
-              bActual = "";
-            pacientes=_repoPaciente.GetAllPacientes(); 
+                bActual = "";
+                pacientes=_repoPaciente.GetAllPacientes(); 
            }
             else
-        {
-            bActual =b;
-            pacientes=_repoPaciente.SeachPacientes(b);
-        }
+            {
+                bActual =b;
+                pacientes=_repoPaciente.SeachPacientes(b);
+            }
         }
     }
 }

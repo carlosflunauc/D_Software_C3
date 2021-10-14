@@ -9,14 +9,14 @@ namespace HospiEnCasa.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
-        Paciente IRepositorioPaciente.AddPaciente(Paciente paciente)
+       public Paciente AddPaciente(Paciente paciente)
         {
             var pacienteAdicionado = _appContext.Pacientes.Add(paciente);
             _appContext.SaveChanges();
             return pacienteAdicionado.Entity;
         }
 
-        void IRepositorioPaciente.DeletePaciente(int idPaciente)
+        public void DeletePaciente(int idPaciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
             if (pacienteEncontrado == null)
@@ -25,24 +25,24 @@ namespace HospiEnCasa.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientes()
+        public IEnumerable<Paciente> GetAllPacientes()
         {
             return _appContext.Pacientes;
         }
 
-        Paciente IRepositorioPaciente.GetPaciente(int idPaciente)
+        public Paciente GetPaciente(int idPaciente)
         {
-            return _appContext.Pacientes.Find(idPaciente);
-            /*
-            var pac = _appContext.Pacientes
+            //return _appContext.Pacientes.Find(idPaciente);
+            
+            var paciente = _appContext.Pacientes
                        .Where(p => p.Id == idPaciente)
                        .Include(p => p.Medico)
+                       .Include(p =>p.SignosVitales)
                        .FirstOrDefault();
-            return pac;
-            */
+            return paciente;
+        
         }
-
-        Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
+        public Paciente UpdatePaciente(Paciente paciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.Find(paciente.Id);
             if (pacienteEncontrado != null)
@@ -90,16 +90,16 @@ namespace HospiEnCasa.App.Persistencia
             }
             return null;
         }
-        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesGenero(Genero genero)
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesGenero(int genero)
         {
             return _appContext.Pacientes
-                        .where(p =>p.Genero == (genero))
+                        .Where(p =>p.Genero == (Genero)genero)
                         .ToList();
         }
         IEnumerable<Paciente> IRepositorioPaciente.SeachPacientes(string nombre)
         {
             return _appContext.Pacientes
-                            .where(p =>p.Nombre.Contains(nombre));
+                            .Where(p =>p.Nombre.Contains(nombre));
         }
     }
 }
