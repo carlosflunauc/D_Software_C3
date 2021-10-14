@@ -13,10 +13,12 @@
     <div class="form-group">
         <label asp-for="paciente.Apellidos"></label>
         <input asp-for="paciente.Apellidos" class="form-control">
+        <span asp-validation-for="paciente.Apellidos" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="paciente.NumeroTelefono"></label>
         <input asp-for="paciente.NumeroTelefono" class="form-control">
+        <span asp-validation-for="paciente.NumeroTelefono" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="paciente.Genero"></label>
@@ -45,3 +47,8 @@
     <button type="submit" class="btn btn-primary">Crear Paciente</button>
 </form>
 <a class="btn btn-secondary" asp-page="./Index1">Volver</a>
+
+<!-- 
+    dotnet new page -n “Create”-na HospiEnCasa.App.Frontend.Pages -o .\Pages\Saludos\
+
+    -->

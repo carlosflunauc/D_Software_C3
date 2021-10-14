@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace HospiEnCasa.App.Dominio
 {
     /// <summary>Class <c>Medico</c>
@@ -6,6 +8,8 @@ namespace HospiEnCasa.App.Dominio
     public class Medico : Persona
     {
         /// Nombre de la especialidad medica del Médico  
+        [Required(ErrorMessage="Este es un campo obligatorio")]
+        [StringLength(50, ErrorMessage="Longitud Maxima 50")]
         public string Especialidad { get; set; }
         /// Código único del médico
         public string Codigo { get; set; }
