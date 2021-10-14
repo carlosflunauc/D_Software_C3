@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/6ffb47b5-e0fc-4b33-9b5d-7b6ed4c83104/resourceGroups/MisionTIC2022moon/providers/Microsoft.Web/sites/MisionTic2022moon",
+    "appService.deploySubpath": "HospiEnCasa.App.Frontend\\publish"
+}
