@@ -42,7 +42,7 @@
             <ul>
                 @foreach (var signoVital in Model.paciente.SignosVitales)
                 {
-                    <li>@signoVital.Signo - @signoVital.Valor</li>
+                    <li>@signoVital.Signo - @signoVital.Valor - @signoVital.FechaHora</li>
                 }
             </ul>
             <a class="btn btn-secondary" asp-page="./AddSignoVital" asp-route-id="@Model.paciente.Id">

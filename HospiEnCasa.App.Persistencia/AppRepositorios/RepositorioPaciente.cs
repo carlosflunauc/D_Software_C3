@@ -55,7 +55,7 @@ namespace HospiEnCasa.App.Persistencia
             return pacienteEncontrado;
         }
         Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
-        {
+        {   
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
             if (pacienteEncontrado != null)
             {
