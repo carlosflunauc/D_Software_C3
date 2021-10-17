@@ -18,6 +18,7 @@ HospiEnCasa.App.Dominio/bin
 HospiEnCasa.App.Dominio/obj
 HospiEnCasa.App.Consola/bin
 HospiEnCasa.App.Consola/obj
+*.cache
 *.dll
 *.pdb
 *.cache
