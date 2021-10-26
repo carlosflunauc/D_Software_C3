@@ -1,13 +1,7 @@
 using System;
 using System.Collections.Generic;
 using HospiEnCasa.App.Dominio;
-
-
 using HospiEnCasa.App.Persistencia;
-
-
-
-
 
 namespace HospiEnCasa.App.Consola
 {
@@ -27,14 +21,6 @@ namespace HospiEnCasa.App.Consola
             //AddSignoVital();
             //AsignarSignoVital();
             //AsignarPaciente();
-
-
-
-
-
-
-
-
         }
         private static void AddPaciente()
         {
