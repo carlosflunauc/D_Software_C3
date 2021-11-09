@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "C2xNfMQNRlkYwULcS2IdYDV6UD3EPzyaCz07d9B19QcSiuvV3ddV0CM4gS+sP2KwnfblftAYzx86l164d/sfOw==",
+=======
+  "dgSpecHash": "RErXdz21KmxiVUGdFgzPRGXMS6K2qmWojqx0orIDeXIqfpvsC33qBUADcpSQj3KhfLx8j39gcBcHsv7zz82OjQ==",
+>>>>>>> 48808e74debf6dda25e3cb030e45e7a7855ce4c5
   "success": true,
   "projectFilePath": "/Users/carloslondono/MisionTic/D_Software_C3/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
   "expectedPackageFiles": [],

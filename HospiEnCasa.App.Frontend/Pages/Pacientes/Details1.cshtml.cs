@@ -30,3 +30,6 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes
         }
     }
 }
+
+//dotnet new page -n “Create”-na HospiEnCasa.App.Frontend.Pages 
+//-o .\Pages\Saludos\

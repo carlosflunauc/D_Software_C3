@@ -10,16 +10,16 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
-HospitalEnCasa.App.Frontend/bin
-HospitalEnCasa.App.Frontend/obj
-HospitalEnCasa.App.Persistencia/bin
-HospitalEnCasa.App.Persistencia/obj
-HospitalEnCasa.App.Dominio/bin
-HospitalEnCasa.App.Dominio/obj
-HospitalEnCasa.App.Consola/bin
-HospitalEnCasa.App.Consola/obj
 
-*.cache
+HospiEnCasa.App.Frontend/bin
+HospiEnCasa.App.Frontend/obj
+HospiEnCasa.App.Persistencia/bin
+HospiEnCasa.App.Persistencia/obj
+HospiEnCasa.App.Dominio/bin
+HospiEnCasa.App.Dominio/obj
+HospiEnCasa.App.Consola/bin
+HospiEnCasa.App.Consola/obj
+
 *.dll
 *.pdb
 *.cache

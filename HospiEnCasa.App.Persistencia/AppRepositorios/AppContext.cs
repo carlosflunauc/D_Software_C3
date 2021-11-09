@@ -12,11 +12,14 @@ namespace HospiEnCasa.App.Persistencia
     public DbSet<SignoVital> SignosVitales{get; set;}
     public DbSet<Historia> Historias{get; set;} 
     public DbSet<SugerenciaCuidado> SugerenciasCuidado{get; set;}          
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
       if (!optionsBuilder.IsConfigured)
       {
-          optionsBuilder.UseSqlServer("Initial Catalog=Hospicarlosluna; Data Source=HOMELUNA; Integrated Security=true");
+          optionsBuilder.UseSqlServer("Server=tcp:hospiencasaapp.database.windows.net,1433;Database=Hospicarlosluna;User ID=Hospiencasa;Password=MisionTic2022;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+          //optionsBuilder.UseSqlServer("Initial Catalog=Hospicarlosluna; Data Source=HOMELUNA; Integrated Security=true");
             }
         }
     }
