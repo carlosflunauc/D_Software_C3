@@ -14,13 +14,13 @@ namespace HospiEnCasa.App.Consola
         {
             Console.WriteLine("Hello World!");
             //AddPaciente();
-            //BuscarPaciente(8);
+            BuscarPaciente(8);
             //EliminarPaciente(7);
             //MostrarPacientes();
             //AddMedico();
             //AsignarMedico();
             //AddSignoVital();
-            AsignarSignoVital();
+            //AsignarSignoVital();
             //AsignarPaciente();
         }
         private static void AddPaciente()
